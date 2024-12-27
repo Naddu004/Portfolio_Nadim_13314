@@ -1,0 +1,482 @@
+/* Full HTML page Styling */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", serif;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-color: rgb(24, 24, 24);
+}
+span{
+    background: linear-gradient(to right, rgba(255,188,224,1) 0%, rgba(170,165,255,1) 46%, rgba(165,255,205,1) 100.2% );
+    background-clip: text;
+    color: transparent;
+}
+p{
+    font-family: "Shantell Sans", serif;
+    font-size: 1.1em;
+}
+
+/* Navbar Styling */
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+.navbar ul a{
+    color: #ffffff;
+    padding: 0.3em;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+.navbar ul a:hover{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    opacity: 1;
+}
+.btn{
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(24, 24, 24);
+}
+#menu{  
+    color: white;
+    font-size: 3em;
+    display: none;
+}
+
+/* Introduction section Styling */
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+    width: 21vw;
+    border-radius: 20%;
+    margin-top: 3em;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 5em;
+    font-weight: 500;
+}
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(2){
+    background-color: white;
+    color: rgb(24, 24, 24);
+}
+.btn-box .btn:nth-of-type(2):hover{
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+/* About section Styling */
+#about{
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 2em;
+}
+.about-box h1{
+    font-size: 5em;
+}
+.about-box p{
+    color: white;
+    opacity: 0.8;
+}
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+.skills ul li span{
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+.skills ul li span:hover{
+    transform: translateX(10px);
+}
+.skills ul li i{
+    font-size: 1.2em;
+}
+.about-box h2{
+    font-size: 2.5em;
+}
+
+/* Project section Stutyle */
+#project{
+    background-color: rgb(24, 24, 24);
+}
+.header{
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+.box{
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 3em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover{
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p{
+    opacity: 0.8;
+}
+.box h1{
+    font-size: 2em;
+}
+.box img{
+    min-width: 25px;
+    border-radius: 0.5em;
+    transition: 0.3s ease-in-out;
+}
+.box img:hover{
+    transform: scale(1.01);
+}
+
+/* Education Section Styling */
+#education {
+    background-color: rgb(21, 21, 21);
+    padding: 5% 10%;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.education-card {
+    background-color: rgb(34, 34, 34);
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    padding: 2em;
+    text-align: center;
+    color: white;
+    width: 35vw; 
+    transition: transform 0.3s;
+}
+
+.underPara{
+    text-decoration: underline;
+}
+
+.education-card img {
+    width: 100%;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.education-card h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+.education-card p {
+    opacity: 0.8;
+}
+
+.education-card:hover {
+    border: 3px solid rgb(100, 100, 100);
+}
+
+/* Contact section Style */
+#contact{
+    background-color: rgb(24, 24, 24);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+form span{
+    font-size: 1.5em;
+}
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+.input-box span{
+    font-size: 1.5em;
+}
+form input{
+    font-size: 1.5em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+form input:focus{
+    background: rgb(229, 229, 229);
+}
+button{
+    background: rgb(24, 24, 24);
+}
+
+/* Footer section Style */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    background-color: rgb(21, 21, 21);
+    width: 100%;
+    padding: 5em 15%;
+}
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.col-box i{
+    font-size: 2em;
+}
+.col-box span{
+    font-size: 1.2em;
+}
+.col-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+.col-right span{
+    font-size: 1.3em;
+}
+.col-right .social-icons a{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 2em;
+}
+.col-right .social-icons a i{
+    font-size: 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.col-right .social-icons a i:hover{
+    color: white;
+}
+
+@media(max-width: 968px){
+    section{
+        padding: 8em 15%;
+    }
+    nav .btn{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .navlinks{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 1em 3em;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(0, 0, 0, 0.9);
+        display: none;
+    }
+    .navlinks a{
+        margin: 1.5em 0;
+        display: block;
+        font-size: 1.5em;
+        color: white;
+    }
+    .navlinks.active{
+        display: block;
+    }
+    #home h1{
+        font-size: 4em;
+    }
+    #home h3{
+        font-size: 2em;
+    }
+    #home img{
+        width: 24vw;;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #about img{
+        width: 32vw;
+    }
+    #about h1{
+        font-size: 3em;
+    }
+    #about ul{
+        font-size: 1em;
+    }
+    #education {
+        padding: 5% 5%;
+    }
+    .education-card{
+        width: 45vw;
+    }
+    .education-container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 768px){
+    #home h1{
+        font-size: 2.5em;
+    }
+    #home h3{
+        font-size: 1.5em;
+    }
+    #home img{
+        width: 32vw;;
+    }
+
+    .about .skills{
+        gap: 3em;
+    }
+
+    #project .header{
+        font-size: 3em;
+    } 
+
+    #education {
+        padding: 5% 2%;
+    }
+
+    .education-card{
+        width: 55vw;
+    }
+
+    #contact .header{
+        font-size: 3em;
+    } 
+
+    #contact .info-box span{
+        font-size: 1.5em; 
+    } 
+
+    .input-box input{
+        padding: 0.5em 1em;
+        font-size: 1em;
+    }
+
+    footer{
+        flex-direction: column;
+        gap: 5em;
+        align-items: baseline;
+    }
+}
